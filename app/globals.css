@@ -2,7 +2,7 @@
 @import "tw-animate-css";
 
 @import "tailwindcss";
-@plugin '../lib/hero';
+/* @plugin '../lib/hero'; */
 
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 
