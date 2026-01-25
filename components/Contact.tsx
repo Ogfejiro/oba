@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const WHATSAPP_NUMBER = "234XXXXXXXXXX"; // <-- ADD YOUR NUMBER (no +)
+const WHATSAPP_NUMBER = "2347067579674"; // <-- ADD YOUR NUMBER (no +)
 
 const ContactPage = () => {
   const [name, setName] = useState("");
@@ -14,7 +14,7 @@ const ContactPage = () => {
   )}`;
 
   return (
-    <div className="bg-white min-h-screen">
+    <div  id="contact" className="bg-white min-h-screen">
       {/* HEADER */}
       <section className="pt-32 pb-20 bg-orange-50/40">
         <div className="container mx-auto px-4 text-center max-w-3xl">
@@ -57,8 +57,8 @@ const ContactPage = () => {
                 </h2>
 
                 <div className="space-y-4 text-gray-700">
-                  <p><strong>Email:</strong> hello@yourcompany.com</p>
-                  <p><strong>Phone:</strong> +234 XXX XXX XXXX</p>
+                  <p><strong>Email:</strong> hello@kingrubytech</p>
+                  <p><strong>Phone:</strong> +2347067579674</p>
                   <p><strong>Location:</strong> Nigeria</p>
                 </div>
               </div>

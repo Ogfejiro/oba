@@ -43,21 +43,7 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* SERVICES */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-          >
-            <h3 className="text-white font-bold mb-4">Services</h3>
-            <ul className="space-y-3 text-sm">
-              <li>Web Development</li>
-              <li>UI/UX Design</li>
-              <li>Business Websites</li>
-              <li>Custom Dashboards</li>
-            </ul>
-          </motion.div>
+          
 
           {/* CONTACT */}
           <motion.div
@@ -68,8 +54,8 @@ const Footer = () => {
           >
             <h3 className="text-white font-bold mb-4">Contact</h3>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li>Email: hello@yourcompany.com</li>
-              <li>Phone: +234 XXX XXX XXXX</li>
+              <li>Email: hello@kingrubytech</li>
+              <li>Phone: +2347067579674</li>
               <li>Location: Nigeria</li>
             </ul>
           </motion.div>

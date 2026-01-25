@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+
 const sectionVariant = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -13,10 +14,15 @@ const sectionVariant = {
 };
 
 const AboutPage = () => {
+  const handleTwitterClick = () => {
+    // Replace with your actual Twitter handle
+    window.open("https://twitter.com/kingrubytech", "_blank", "noopener,noreferrer");
+  };
+
   return (
-    <div className="bg-white min-h-screen">
+    <div id="about" className="bg-blue-50 min-h-screen"> {/* Light blue background */}
       {/* PAGE HEADER */}
-      <section className="pt-32 pb-20">
+      <section className="pt-6 pb-8"> {/* Reduced top padding */}
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
             About <span className="text-orange-500">Us</span>
@@ -28,16 +34,18 @@ const AboutPage = () => {
             practical experience to help homes, businesses, and institutions
             achieve energy independence while embracing smart, modern technology.
           </p>
-        </div>
+          
+          {/* GET TO KNOW BUTTON */}
+          
+                  </div>
       </section>
 
       {/* SECTION 1 — TEXT LEFT / IMAGE RIGHT */}
       <motion.section
-      
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="py-20"
+        className="py-16" // Reduced padding
       >
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
           {/* TEXT */}
@@ -75,11 +83,10 @@ const AboutPage = () => {
 
       {/* SECTION 2 — IMAGE LEFT / TEXT RIGHT */}
       <motion.section
-        
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="py-20 bg-gray-50"
+        className="py-16 bg-white" // Kept white for contrast
       >
         <div className="container mx-auto px-4 flex flex-col lg:flex-row-reverse items-center gap-16">
           {/* TEXT */}
@@ -105,8 +112,8 @@ const AboutPage = () => {
 
           {/* IMAGE */}
           <div className="lg:w-1/2">
-            <div className="w-full h-72 bg-gray-200 rounded-xl flex items-center justify-center text-gray-500">
-               <img
+            <div className="w-full h-72 bg-gray-100 rounded-xl flex items-center justify-center overflow-hidden">
+              <img
                 src="/images/RKT 4 1.svg"
                 alt="King Ruby Tech"
                 className="w-full h-full object-cover"
@@ -121,7 +128,7 @@ const AboutPage = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="py-20"
+        className="py-16" // Reduced padding
       >
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
           {/* TEXT */}
@@ -146,8 +153,8 @@ const AboutPage = () => {
 
           {/* IMAGE */}
           <div className="lg:w-1/2">
-            <div className="w-full h-72 bg-gray-200 rounded-xl flex items-center justify-center text-gray-500">
-               <img
+            <div className="w-full h-72 bg-gray-100 rounded-xl flex items-center justify-center overflow-hidden">
+              <img
                 src="/images/RKT 11 1.png"
                 alt="King Ruby Tech"
                 className="w-full h-full object-cover"

@@ -36,7 +36,7 @@ const itemVariant = {
 
 const ServicesPage = () => {
   return (
-    <div className="bg-white min-h-screen">
+    <div id="services" className="bg-white min-h-screen">
 
       {/* HEADER */}
       <section className="pt-32 pb-16">
@@ -98,7 +98,6 @@ const ServicesPage = () => {
                     <motion.li
                       key={i}
                       custom={i}
-                      variants={itemVariant}
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: true }}

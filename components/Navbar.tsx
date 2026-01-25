@@ -7,9 +7,9 @@ import QuotationModal from "@/components/QuotationModal"
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Products", href: "/products" },
-  { name: "Blog", href: "/blog" },
+  { name: "About", href: "#about" },
+  { name: "Products", href: "#products" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -117,10 +117,7 @@ const Navbar = () => {
       </AnimatePresence>
 
       {/* QUOTATION MODAL */}
-      <QuotationModal
-        isOpen={openQuote}
-        onClose={() => setOpenQuote(false)}
-      />
+    
     </>
   );
 };

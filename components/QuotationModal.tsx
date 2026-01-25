@@ -15,7 +15,7 @@ export default function QuotationModal({ isOpen, onClose, productName }: Props) 
   const [message, setMessage] = useState("");
 
   const handleSubmit = () => {
-    const whatsappNumber = "1234567890"; // Add your number here
+    const whatsappNumber = "2347067579674"; // Add your number here
     const text = `Hi, I want a quotation for ${productName}. Name: ${name}, Email: ${email}, Message: ${message}`;
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`, "_blank");
     onClose();
